@@ -53,7 +53,7 @@ include('inc/config.php');
 					<nav id="menu" class="pull-right">
 						<ul>
 							<li><a href="index.php">Home</a></li>															
-							<li><a href="products.php">Produ</a>
+							<li><a href="products.php">Products</a>
 								<ul>									
 									<li><a href="products.php">T-sirt</a></li>
 								</ul>

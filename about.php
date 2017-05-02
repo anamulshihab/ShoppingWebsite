@@ -35,7 +35,7 @@ session_start();
 			<div class="row">
 				<div class="span4">
 					<form method="POST" class="search_form">
-						<input type="text" class="input-block-level search-query" Placeholder="eg. T-sirt">
+						<input type="text" class="input-block-level search-query" Placeholder="Search">
 					</form>
 				</div>
 				<div class="span8">
@@ -70,13 +70,8 @@ session_start();
 				<h2>About Us</h2>
 			</section>	
 			<section class="main-content">
-				<?php
-					$query = mysql_query("SELECT * FROM pageabout") or die(mysql_error());
-					$data = mysql_fetch_array($query);
-				
-				 	echo $data['deskripsi'];
-				?>
-            </section>
+			<h2>Hello There ! I am Student of Estonian IT College and this is a project for my web programming course ! Thanks for stopping by :)</h2>
+				            </section>
 			
 			<section id="footer-bar">
 				<div class="row">

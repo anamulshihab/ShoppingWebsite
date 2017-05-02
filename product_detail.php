@@ -98,7 +98,7 @@ include('inc/config.php');
 								<?php echo '<h4><strong>Harga : Rp '.$data['harga_brg'].'</strong></h4>'; ?>
 							</div>
 							<div class="span5">
-                                <?php echo '<a class="btn btn-success" href="keranjang.php?add='.$data['id_brg'].'" class="category"><h4>Masukkan Keranjang</h4></a>'; ?>
+                                <?php echo '<a class="btn btn-success" href="keranjang.php?add='.$data['id_brg'].'" class="category"><h4>Add to Cart</h4></a>'; ?>
 							</div>							
 						</div>
                         <br>
