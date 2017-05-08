@@ -60,21 +60,21 @@ session_start();
 					<div class="span12">						  
 						<?php
 												  
-							  $nama = $_POST['nama'];
-							  $alamat = $_POST['alamat'];
+							  $nama = $_POST['name'];
+							  $alamat = $_POST['address'];
 							  $email = $_POST['email'];
-							  $telp = $_POST['telepon'];
+							  $telp = $_POST['Phone'];
 							  $total = $_POST['total'];
 							  
-							  echo '<a href="index.php">Kembali</a><br>';
+							  echo '<a href="index.php">back</a><br>';
 							  
-							  echo 'Terima kasih Anda sudah berbelanja di Toko Online kami. Dan berikut ini adalah data yang anda masukkan.';
-							  echo '<p>Total biaya untuk pembelian Produk adalah '.$total.' dan biaya bisa di kirimkan melalui Rekening Bank BCA cabang Surabaya dengan nomor rekening xxxx-xxxx-xxxx atas nama Si XXXX.</p>';
-							  echo '<p>Dan barang akan kami kirim ke alamat di bawah ini:</p>';
-							  echo '<p>Nama : '.$nama.'<br>';
-							  echo '<p>Alamat Lengkap : '.$alamat.'</p>';
-			  				  echo '<p>Total Belanja Anda : '.$total.'</p>';
-							  echo '<p>Dengan Rincian : </p>';
+							  echo 'Thank you for shopping at our Online Store. And here is the data you entered.';
+							  echo '<p> Total cost for Product purchase is'.$total.'And fees can be submitted through Branch Bank Account Swedbank branch with account number xxxx-xxxx-xxxx on behalf of Shihab XXXX..</p>';
+							  echo '<p>And the shipment will be sent to the address below:</p>';
+							  echo '<p>Name : '.$nama.'<br>';
+							  echo '<p>Address : '.$alamat.'</p>';
+			  				  echo '<p>Total shopping  : '.$total.'</p>';
+							  echo '<p>With details : </p>';
 							  
 							  $p = mysql_query("SELECT * FROM pembeli");
 							  $cek = mysql_fetch_array($p);
