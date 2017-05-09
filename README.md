@@ -5,7 +5,7 @@ Shopping Website
 
 [Admin Panel](https://shihabtest.000webhostapp.com/admin/index.php)
 
-This website is developed with [Bootsrap](http://getbootstrap.com/) .
+This website is developed with [Bootstrap](http://getbootstrap.com/) .
 
 
 
@@ -18,6 +18,10 @@ author
 ---------------
 
 Anamul Hoque Shihab [Web](https://anamulshihab.com)
+
+Cyber Security Student 
+
+[Estonian IT College](http://www.itcollege.ee/)
 
 Getting Started
 ---------------
