@@ -78,13 +78,13 @@ session_start();
                                     <div class="control-group">
                                         <label class="control-label">Name</label>
                                         <div class="controls">
-                                            <input type="text" required placeholder="Nama" name="nama" class="input-xlarge">
+                                            <input type="text" required placeholder="Name" name="name" class="input-xlarge">
                                         </div>
                                     </div>
                                     <div class="control-group">
                                         <label class="control-label">Shipping Address</label>
                                         <div class="controls">
-                                            <input type="text" required placeholder="Alamat Pengiriman" name="alamat" class="input-xlarge">
+                                            <input type="text" required placeholder="postal address" name="address" class="input-xlarge">
                                         </div>
                                     </div>					  
                                     <div class="control-group">
@@ -96,10 +96,10 @@ session_start();
                                     <div class="control-group">
                                         <label class="control-label">Phone</label>
                                         <div class="controls">
-                                            <input type="text" required placeholder="Telepon" name="telepon" class="input-xlarge">
+                                            <input type="text" required placeholder="Telephone" name="telephone" class="input-xlarge">
                                         </div>
                                     </div>
-                                    <button type="submit" name="selesai" class="btn btn-primary">Done !</button>
+                                    <button type="submit" name="selesai" class="btn btn-primary">Submit</button>
                                 </div>
                                 
                                 <div class="span5">
@@ -131,7 +131,7 @@ session_start();
                                                     }
                                                 }
                                               ?>
-                                              <?php echo '<h5 style="color:#F00">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total Belanja : '.@$total.' </h5>'; ?>
+                                              <?php echo '<h5 style="color:#F00">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total Price : '.@$total.' </h5>'; ?>
                                         </ul>
                                     </div>
                                 </div>          
@@ -145,18 +145,28 @@ session_start();
 			<section id="footer-bar">
 				<div class="row">
 					<div class="span3">
-						<h4>Navigation</h4>
+					<h4>Navigation</h4>
 						<ul class="nav">
-							<li><a href="index.php">Home</a></li>  
-							<li><a href="about.php">About</a></li>
-							<li><a href="contact.php">Contact</a></li>
-							<li><a href="keranjang.php">Cart</a></li>							
+							<li><a href="index.php">Homepage</a></li>  
+							<li><a href="about.php">About Us</a></li>
+							<li><a href="contact.php">Contac Us</a></li>
+							<li><a href="cart.php">Your Cart</a></li>
+										
 						</ul>					
 					</div>
-                    <div class="span4"></div>
+					<div class="span4">
+						<h4>My Account</h4>
+						<ul class="nav">
+							<li><a href="loginindex.php">Login</a></li>
+							<li><a href="register.php">Sign Up</a></li>
+							<li><a href="#">Order History</a></li>
+							<li><a href="#">Wish List</a></li>
+							<li><a href="#">Newsletter</a></li>
+						</ul>
+					</div>
 					<div class="span5">
 						<p class="logo"><img src="themes/images/logo.png" class="site_logo" alt=""></p>
-						<p>Summer is coming !!!</p>
+						<p>Exclusive T-Shirts in cheapest price!</p>
 						<br/>
 						<span class="social_icons">
 							<a class="facebook" href="#">Facebook</a>
@@ -168,9 +178,9 @@ session_start();
 				</div>	
 			</section>
 			<section id="copyright">
-				<span>Copyright 2017 SHIHAB  All right reserved.</span>
+				<span>Copyright 20137 SHIHAB  All right reserved.</span>
 			</section>
 		</div>
-		<script src="themes/js/common.js"></script>
+		<script src="themes/js/common.js"></script>		
     </body>
 </html>

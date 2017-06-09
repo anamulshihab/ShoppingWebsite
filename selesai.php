@@ -60,21 +60,21 @@ session_start();
 					<div class="span12">						  
 						<?php
 												  
-							  $nama = $_POST['name'];
-							  $alamat = $_POST['address'];
+							  $nama = $_POST['nama'];
+							  $alamat = $_POST['alamat'];
 							  $email = $_POST['email'];
-							  $telp = $_POST['Phone'];
+							  $telp = $_POST['telepon'];
 							  $total = $_POST['total'];
 							  
-							  echo '<a href="index.php">back</a><br>';
+							  echo '<a href="index.php">Kembali</a><br>';
 							  
-							  echo 'Thank you for shopping at our Online Store. And here is the data you entered.';
-							  echo '<p> Total cost for Product purchase is'.$total.'And fees can be submitted through Branch Bank Account Swedbank branch with account number xxxx-xxxx-xxxx on behalf of Shihab XXXX..</p>';
-							  echo '<p>And the shipment will be sent to the address below:</p>';
-							  echo '<p>Name : '.$nama.'<br>';
-							  echo '<p>Address : '.$alamat.'</p>';
-			  				  echo '<p>Total shopping  : '.$total.'</p>';
-							  echo '<p>With details : </p>';
+							  echo 'Terima kasih Anda sudah berbelanja di Toko Online kami. Dan berikut ini adalah data yang anda masukkan.';
+							  echo '<p>Total biaya untuk pembelian Produk adalah '.$total.' dan biaya bisa di kirimkan melalui Rekening Bank BCA cabang Surabaya dengan nomor rekening xxxx-xxxx-xxxx atas nama Si XXXX.</p>';
+							  echo '<p>Dan barang akan kami kirim ke alamat di bawah ini:</p>';
+							  echo '<p>Nama : '.$nama.'<br>';
+							  echo '<p>Alamat Lengkap : '.$alamat.'</p>';
+			  				  echo '<p>Total Belanja Anda : '.$total.'</p>';
+							  echo '<p>Dengan Rincian : </p>';
 							  
 							  $p = mysql_query("SELECT * FROM pembeli");
 							  $cek = mysql_fetch_array($p);
@@ -175,16 +175,25 @@ session_start();
 					<div class="span3">
 						<h4>Navigation</h4>
 						<ul class="nav">
-						<li><a href="index.php">Home</a></li>  
-							<li><a href="about.php">About</a></li>
-							<li><a href="contact.php">contact</a></li>
-							<li><a href="keranjang.php">Cart</a></li>								
+							<li><a href="index.php">Homepage</a></li>  
+							<li><a href="about.php">About Us</a></li>
+							<li><a href="contact.php">Contac Us</a></li>
+							<li><a href="cart.php">Your Cart</a></li>
+							<li><a href="register.html">Login</a></li>							
 						</ul>					
 					</div>
-                    <div class="span4"></div>
+					<div class="span4">
+						<h4>My Account</h4>
+						<ul class="nav">
+							<li><a href="#">My Account</a></li>
+							<li><a href="#">Order History</a></li>
+							<li><a href="#">Wish List</a></li>
+							<li><a href="#">Newsletter</a></li>
+						</ul>
+					</div>
 					<div class="span5">
 						<p class="logo"><img src="themes/images/logo.png" class="site_logo" alt=""></p>
-						<p>Top T shirt seller in Tallinn</p>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. the  Lorem Ipsum has been the industry's standard dummy text ever since the you.</p>
 						<br/>
 						<span class="social_icons">
 							<a class="facebook" href="#">Facebook</a>
@@ -196,7 +205,8 @@ session_start();
 				</div>	
 			</section>
 			<section id="copyright">
-				<span>Copyright 2017 SHIHAB  All right reserved.</span>
+				<span>Copyright 20137 SHIHAB  All right reserved.</span>
+			</section>
 			</section>
 		</div>
 		<script src="themes/js/common.js"></script>

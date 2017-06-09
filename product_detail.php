@@ -90,12 +90,12 @@ include('inc/config.php');
 							</div>
 							<div class="span5">
 								<address>
-									<?php echo '<strong>Nama Barang : </strong> <span> '.$data['nama_brg'].' </span><br>
-									<strong>Kode Produk : </strong> <span> '.$data['id_brg'].' </span><br>
-									<strong>Stok : </strong> <span> '.$data['jml_brg'].' </span><br>
-									<strong>Kategori : </strong> <span> '.$data['kategori'].' </span><br>'; ?>							
+									<?php echo '<strong>Product Name : </strong> <span> '.$data['nama_brg'].' </span><br>
+									<strong>Product Code : </strong> <span> '.$data['id_brg'].' </span><br>
+									<strong>In Stock : </strong> <span> '.$data['jml_brg'].' </span><br>
+									<strong>Catagory : </strong> <span> '.$data['kategori'].' </span><br>'; ?>							
 								</address>									
-								<?php echo '<h4><strong>Harga : Rp '.$data['harga_brg'].'</strong></h4>'; ?>
+								<?php echo '<h4><strong>Price : Rp '.$data['harga_brg'].'</strong></h4>'; ?>
 							</div>
 							<div class="span5">
                                 <?php echo '<a class="btn btn-success" href="keranjang.php?add='.$data['id_brg'].'" class="category"><h4>Add to Cart</h4></a>'; ?>
@@ -118,21 +118,30 @@ include('inc/config.php');
 				</div>
 			</section>
             			
-			<section id="footer-bar">
+				<section id="footer-bar">
 				<div class="row">
 					<div class="span3">
 						<h4>Navigation</h4>
 						<ul class="nav">
-							<li><a href="index.php">Home</a></li>  
-							<li><a href="about.php">About</a></li>
-							<li><a href="contact.php">contact</a></li>
-							<li><a href="keranjang.php">Cart</a></li>							
+							<li><a href="index.php">Homepage</a></li>  
+							<li><a href="about.php">About Us</a></li>
+							<li><a href="contact.php">Contac Us</a></li>
+							<li><a href="cart.php">Your Cart</a></li>
+							<li><a href="register.html">Login</a></li>							
 						</ul>					
 					</div>
-                    <div class="span4"></div>
+					<div class="span4">
+						<h4>My Account</h4>
+						<ul class="nav">
+							<li><a href="#">My Account</a></li>
+							<li><a href="#">Order History</a></li>
+							<li><a href="#">Wish List</a></li>
+							<li><a href="#">Newsletter</a></li>
+						</ul>
+					</div>
 					<div class="span5">
 						<p class="logo"><img src="themes/images/logo.png" class="site_logo" alt=""></p>
-						<p>Top T shirt seller in Tallinn</p>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. the  Lorem Ipsum has been the industry's standard dummy text ever since the you.</p>
 						<br/>
 						<span class="social_icons">
 							<a class="facebook" href="#">Facebook</a>
@@ -144,7 +153,7 @@ include('inc/config.php');
 				</div>	
 			</section>
 			<section id="copyright">
-				<span>Copyright 2017 SHIHAB  All right reserved.</span>
+				<span>Copyright 20137 SHIHAB  All right reserved.</span>
 			</section>
 		</div>
 		<script src="themes/js/common.js"></script>
